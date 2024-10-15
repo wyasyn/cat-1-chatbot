@@ -25,7 +25,6 @@ img {
   overflow: clip;
   max-height: 400px;
   width: 100%;
-  border-radius: 0 0 2rem 0;
 }
 
 .container {
@@ -61,22 +60,6 @@ iframe {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-.cta {
-  all: unset;
-  display: block;
-  margin-top: 5rem;
-  color: #eee;
-  background-color: rgb(22, 22, 248);
-  padding: 0.5rem 2rem;
-  border-radius: 0.5rem;
-  margin-inline: auto;
-  transition: opacity 300ms ease-in-out;
-}
-
-.cta::hover {
-  opacity: 0.75;
-}
-
 #agent-container {
   position: fixed;
   bottom: 2rem;
@@ -96,13 +79,28 @@ iframe {
   gap: 1rem;
   bottom: 2rem;
   right: 2rem;
+  background: #ff6500;
+
+  background-image: linear-gradient(
+    to right,
+    #f857a6 0%,
+    #ff5858 51%,
+    #f857a6 100%
+  );
 
   padding: 0.5rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
   border-radius: 0 5rem 5rem 5rem;
   cursor: pointer;
-  background-color: #ff6500;
-  margin-inline: auto;
-  margin-top: 5rem;
+}
+
+#open:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 #open.closed {
@@ -118,8 +116,31 @@ iframe {
   padding: 0.5rem;
 }
 
-@media (min-width: 768px) {
-  .img-container {
-    border-radius: 0 0 3.5rem 0;
-  }
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+  margin: 3rem;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #eee;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-inline: auto;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
