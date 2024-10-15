@@ -15,35 +15,26 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome to the Academic Office Assistant</h1>
-      <p>
-        Ask any questions related to academics, schedules, exams, and more! by
-        clicking the button below.
-      </p>
-
+    <div class="img-container">
       <img src="./assets//postgraduate.jpg" alt="cavendish" />
-
-      <button id="open">
-        CHAT NOW
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-message-circle"
+    </div>
+    <div>
+      <div class="container">
+        <h1>Welcome to the Academic Office Assistant</h1>
+        <p>
+          Ask any questions related to academics, schedules, exams, and more! by
+          clicking the chat now button below.
+        </p>
+        <a
+          href="https://www.cavendish.ac.ug/"
+          target="_blank"
+          ref="no-referrer"
         >
-          <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-        </svg>
-      </button>
+          <button class="cta">Visit us</button>
+        </a>
 
-      <div id="agent-container" class="closed">
-        <button id="close">
+        <button id="open">
+          CHAT NOW
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -54,18 +45,37 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-x"
+            class="lucide lucide-message-circle"
           >
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
           </svg>
         </button>
-        <iframe
-          width="350"
-          height="430"
-          allow="microphone;"
-          src="https://console.dialogflow.com/api-client/demo/embedded/604cf9dc-62be-4d96-b177-8011526e0ce9"
-        ></iframe>
+
+        <div id="agent-container" class="closed">
+          <button id="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+          <iframe
+            width="350"
+            height="430"
+            allow="microphone;"
+            src="https://console.dialogflow.com/api-client/demo/embedded/604cf9dc-62be-4d96-b177-8011526e0ce9"
+          ></iframe>
+        </div>
       </div>
     </div>
   </body>

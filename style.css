@@ -14,8 +14,14 @@ body {
 img {
   display: block;
   max-width: 100%;
-  border-radius: 0.5rem;
-  margin-top: 3rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.img-container {
+  overflow: clip;
+  max-height: 400px;
+  width: 100%;
 }
 
 .container {
@@ -49,6 +55,22 @@ iframe {
   border: 2px solid #2f2f2f;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.cta {
+  all: unset;
+  display: block;
+  margin-top: 5rem;
+  color: #eee;
+  background-color: rgb(22, 22, 248);
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  margin-inline: auto;
+  transition: opacity 300ms ease-in-out;
+}
+
+.cta::hover {
+  opacity: 0.75;
 }
 
 #agent-container {
